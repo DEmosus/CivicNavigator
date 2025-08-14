@@ -97,7 +97,7 @@ export default function ChatInterface({ role }: ChatInterfaceProps) {
       {error && <p className="text-error mb-2">{error}</p>}
 
       {/* Input + send */}
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2 sm:flex-nowrap">
         <input
           aria-label="chat input"
           value={input}

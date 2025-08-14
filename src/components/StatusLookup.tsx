@@ -36,7 +36,7 @@ export default function StatusLookup() {
   return (
     <div className="bg-panel border border-divider text-textPrimary rounded-xl p-4 mb-6 shadow">
       <h2 className="text-2xl font-semibold mb-4">Check Incident Status</h2>
-      <form onSubmit={handleSubmit} className="flex mb-4" aria-label="Check Incident Status">
+      <form onSubmit={handleSubmit} className="flex flex-wrap gap-2 sm:flex-nowrap mb-4" aria-label="Check Incident Status">
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
